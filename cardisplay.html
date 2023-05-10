@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cardisplay.css" />
+    <link rel="stylesheet" href="/" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="dashboard">
+            <div class="topbar">
+                <span class="arrow-left"></span>
+                <img src="images/car-brake.PNG" alt="carbrakelight" class="imagetopbar-car-brake">
+                <img src="images/cruisecontrol-icon.PNG" alt="cruisecontrol" class="imagetopbar">
+                <img src="images/car-light.PNG" alt="carlight" class="imagetopbar-car-lights">
+                <span class="arrow-right"></span>
+            </div>
+            <div class="middlepart">
+                <div class="batteryside">
+                    <span class="circlebattery">
+                        <span class="batteryshow"> </span>
+                        <span class="batterypercentage">
+                            <img src="images/battery.png" alt="battery" class="batteryimg">
+                            <p id="batterypercent"> 100% </p>
+                            <p id="kmtogo"> 376km </p>
+                        </span>
+                    </span>
+                    <img src="images/chargeup.PNG" alt="charger" class="imagecharger">
+                </div>
+                <div class="kmside">
+                    <span class="circlekm">
+                        <span id="kmline1"></span>
+                        <span id="kmline2"></span>
+                        <span id="kmline3"></span>
+                        <span id="kmline4"></span>
+                        <span id="kmline5"></span>
+                        <span id="kmline6"></span>
+                        <span id="kmline7"></span>
+                        <span id="kmline8"></span>
+                        <span id="kmline9"></span>
+                        <span id="kmline10"></span>
+                        <span id="kmline11"></span>
+                        <span class="kmshow"> </span>
+                        <span class="middlecirclekm">
+                            <p id="kmnumber"> 0 </p>
+                            <p class="kmtext"> KM/H</p>
+                        </span>
+                    </span>
+                    <div class="driverstate">
+                        <p class="drivertext">P</p>
+                        <p class="drivertext2">R</p>
+                        <p class="drivertext3">N</p>
+                        <p class="drivertext4">D</p>
+                    </div>
+                </div>
+                <div class="kwside">
+                    <span class="circlekw">
+                        <span id="line1"></span>
+                        <span id="line2"></span>
+                        <span id="line3"></span>
+                        <span id="line4"></span>
+                        <span class="kwshow"> </span>
+                        <span class="middlecirclekw">
+                            <p id="kwh"> 12 KwH</p>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="bottombar">
+                <div class="time" onload="showTime()">
+                </div>
+                <div class="kmstate">
+                    <p  id="kmalready"> </p>
+                </div>
+                <div class="tempature">
+                    <p> 16° </p>
+                </div>
+            </div>
+        </section>
+        <section class="navigationdisplay">
+
+        </section>
+        <section class="actiondisplay">
+            <div class="flashinglights">
+                <button id="left">
+                    <p> ◀ </p>
+                </button>
+                <button id="stop">
+                    <p> ● </p>
+                </button>
+                <button id="right">
+                    <p> ▶ </p>
+                </button>
+            </div>
+            <button id="acceleratordisplay">
+                <p> Accelerate</p>
+            </button>
+            <button id="brakedisplay"> 
+                <p> Brake </p>
+            </button>
+            <button id="charge"> 
+                <p> Charge </p>
+            </button>
+            <div class="scenarios">
+                <!-- <button id="scenario1">
+                    <p> Scenario 1</p>
+                </button>
+                <button id="scenario2">
+                    <p> Scenario 2</p>
+                </button> -->
+                <button id="handbrake">
+                    <p id="xboxbutton"> X </p>
+                    <p id="handbrakecheck"> Handbrake OFF </p>
+                </button>
+                <button id="cruisecontrol">
+                    <p id="xboxbutton"> Y </p>
+                    <p id="cruisecheck"> Cruise Control OFF </p>
+                </button>
+                <button id="lights">
+                    <p id="xboxbutton"> A </p>
+                    <p id="lightscheck"> Lights Off </p>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- <script src="cardisplay.js"></script> -->
+    <script src="cardisplay-xbox.js"></script>
+</body>
+</html>
